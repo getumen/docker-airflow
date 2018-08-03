@@ -33,7 +33,7 @@ fi
 
 # Install custom python package if requirements.txt is present
 if [ -e "/requirements.txt" ]; then
-    $(which pip) install -r /requirements.txt
+    $(which pip) install -r --user /requirements.txt
 fi
 
 if [ -n "$REDIS_PASSWORD" ]; then

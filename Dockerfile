@@ -60,7 +60,6 @@ RUN set -ex \
     && pip install ndg-httpsclient \
     && pip install pyasn1 \
     && pip install apache-airflow[crypto,celery,postgres,hive,jdbc,mysql,docker]==$AIRFLOW_VERSION \
-    && pip install docker-py \
     && pip install celery[redis]==4.1.1 \
     && apt-get purge --auto-remove -yqq $buildDeps \
     && apt-get autoremove -yqq --purge \
